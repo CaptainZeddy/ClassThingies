@@ -10,14 +10,16 @@ public class SumaBuilder {
 	
 	public static void main(String[] args)throws IOException {
 
-		File f= new File("//home/vespertino/eclipse-workspace/ServiciosYProcesos/src");
+		File f= new File("bin");
 		
-		ProcessBuilder pb= new ProcessBuilder("java","sumaDiferencias.SumaMain");
+		ProcessBuilder pb= new ProcessBuilder("java","sumaDiferencias.SumaMain","Dani");
 		
 		pb.directory(f);
 		System.out.println("Ruta completa: "+pb.directory());
 		
 		Process p = pb.start();
+		
+		
 		
 		try {
 			InputStream is = p.getInputStream();
