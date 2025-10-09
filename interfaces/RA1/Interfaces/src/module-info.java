@@ -4,6 +4,6 @@
 /**
  * 
  */
-module TrabajoInterfaces {
+module Interfaces {
 	requires java.desktop;
 }
