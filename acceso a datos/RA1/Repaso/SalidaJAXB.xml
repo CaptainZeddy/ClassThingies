@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Vehiculos>
+    <vehiculos>
+        <Año>1998</Año>
+        <Marca>Mazda</Marca>
+        <Modelo>rx7</Modelo>
+        <Precio>45000.0</Precio>
+        <Vendedor>Jujiro Matsuda</Vendedor>
+    </vehiculos>
+    <vehiculos>
+        <Año>1996</Año>
+        <Marca>Toyota</Marca>
+        <Modelo>Supra</Modelo>
+        <Precio>65000.0</Precio>
+        <Vendedor>Kiichiro Toyoda</Vendedor>
+    </vehiculos>
+</Vehiculos>
