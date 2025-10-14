@@ -1,6 +1,5 @@
-package vista;
+package interfaces1;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,13 +7,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 
-public class View extends JFrame {
+public class Interfaces1 extends JFrame {
 
 	public static final String pass= "Aloha1234";
 
@@ -38,7 +36,7 @@ public class View extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					View frame = new View();
+					Interfaces1 frame = new Interfaces1();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -50,7 +48,7 @@ public class View extends JFrame {
 
 
 
-	public View() {
+	public Interfaces1() {
 
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -65,7 +63,7 @@ public class View extends JFrame {
 		contentPane.add(lblIntroduceNombreDe);
 
 		textField = new JTextField();
-		textField.setBounds(229, 31, 207, 19);
+		textField.setBounds(229, 31, 195, 19);
 		contentPane.add(textField);
 		textField.setColumns(10);
 
@@ -74,7 +72,7 @@ public class View extends JFrame {
 		contentPane.add(lblNewLabel);
 
 		textField_1 = new JTextField();
-		textField_1.setBounds(229, 86, 207, 19);
+		textField_1.setBounds(229, 86, 195, 19);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 
@@ -89,11 +87,13 @@ public class View extends JFrame {
 		JLabel correcto = new JLabel("CORRECTO");
 		correcto.setBounds(182, 215, 97, 38);
 		correcto.setVisible(false);
+		correcto.setForeground(Color.GREEN);
 		contentPane.add(correcto);
 
 		JLabel incorrecto = new JLabel("ERROR");
 		incorrecto.setBounds(182, 212, 97, 38);
 		incorrecto.setVisible(false);
+		incorrecto.setForeground(Color.RED);
 		contentPane.add(incorrecto);
 
 		aceptar.addActionListener(new ActionListener() {
@@ -116,11 +116,11 @@ public class View extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				if (cancelar.isSelected()) {
-					textField.setText("");
-					textField_1.setText("");
+				textField.setText("");
+				textField_1.setText("");
+				incorrecto.setVisible(false);
+				correcto.setVisible(false);
 
-				}
 			}
 		});
 
