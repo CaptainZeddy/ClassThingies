@@ -13,7 +13,7 @@ public class SumaMain {
 			
 		}
 		System.out.println(res);
-		System.exit(0);
+		System.exit(6);
 	}
 
 }

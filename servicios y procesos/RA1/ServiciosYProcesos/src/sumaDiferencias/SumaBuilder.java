@@ -10,37 +10,25 @@ public class SumaBuilder {
 
 	public static void main(String[] args)throws IOException {
 
-		File f= new File("bin");
 
-		ProcessBuilder pb= new ProcessBuilder("java","sumaDiferencias.SumaMain","2","4");
+		// Directorio donde está la clase compilada
+		File f = new File("bin");
 
-		ProcessBuilder cl = new ProcessBuilder("sh");
+		// Crear proceso para ejecutar SumaMain con argumentos 2 y 4
+		ProcessBuilder pb = new ProcessBuilder("java", "sumaDiferencias.SumaMain", "2", "4");
 
-		cl.directory(f);
-		pb.directory(f);
-		
-		System.out.println("Ruta completa: "+pb.directory());
-		
-		File fOut = new File ("salida.txt");;
-		File fErr = new File ("error.txt");;
-		File fBat = new File ("fichero.txt");;
-		
-		cl.redirectInput(ProcessBuilder.Redirect.from(fBat));
-		cl.redirectOutput(ProcessBuilder.Redirect.to(fOut));
-		cl.redirectError(ProcessBuilder.Redirect.appendTo(fErr));
+		pb.directory(f); // Establecer directorio de trabajo
 
-		
-		Process a = cl.start();
+		// Redirigir salida estándar y errores a archivos
+		pb.redirectOutput(new File("salida.txt"));
+		pb.redirectError(new File("error.txt"));
+
+		// Ejecutar el proceso
 		Process p = pb.start();
 
 
-
-
-	
-		
-
 		try {
-			InputStream is = a.getInputStream();
+			InputStream is = p.getInputStream();
 			int c;
 			while ((c = is.read()) != -1)
 				System.out.print((char) c);
