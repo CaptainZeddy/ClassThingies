@@ -18,8 +18,8 @@ import javax.swing.JButton;
 import javax.swing.ButtonGroup;
 
 public class Ejercicio2_2 extends JFrame {
-	Double[] centimo={0.10,0.20,0.30,0.40,0.50,0.60,0.70,0.80,0.90};
-	Double[] euro= {1.0,2.0,3.0,4.0};
+	Double[] centimo={0.0,0.10,0.20,0.30,0.40,0.50,0.60,0.70,0.80,0.90};
+	Double[] euro= {0.0,1.0,2.0,3.0,4.0};
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -100,6 +100,7 @@ public class Ejercicio2_2 extends JFrame {
 				Double ultimo, primero, segundo ,ingresado=0.0;
 				primero=(Double) euros.getSelectedItem();
 				segundo=(Double) centimos.getSelectedItem();
+				String casteo="";
 				
 				DecimalFormat formato= new DecimalFormat("#.00");
 
@@ -108,28 +109,28 @@ public class Ejercicio2_2 extends JFrame {
 				
 				if(radioA.isSelected()) {
 					if((ultimo=ingresado - 0.8)<0) {
-						formato.format(ultimo*=(-1.0));
-						resultado.setText("cantidad insuficiente, faltan: "+ultimo.toString()+" euros.");
+						formato.format(ultimo*=(-1));
+						resultado.setText("cantidad insuficiente, faltan: "+String.format("%.2f", ultimo)+" euros.");
 					}else if ((ultimo=ingresado - 0.8)>0){
-						resultado.setText("Cambio: "+ultimo.toString());
+						resultado.setText("Cambio: "+String.format("%.2f", ultimo));
 					}else if ((ultimo=ingresado - 0.8)==0) {
 						resultado.setText("ingreso justo correcto.");
 					}
 				}else if (radioB.isSelected()) {
 					if((ultimo=ingresado - 1.2)<0) {
-						formato.format(ultimo*=(-1.0));
-						resultado.setText("cantidad insuficiente, faltan: "+ultimo.toString()+" euros.");
+						formato.format(ultimo*=(-1));
+						resultado.setText("cantidad insuficiente, faltan: "+String.format("%.2f", ultimo)+" euros.");
 					}else if ((ultimo=ingresado - 1.2)>0){
-						resultado.setText("Cambio: "+ultimo.toString());
+						resultado.setText("Cambio: "+String.format("%.2f", ultimo));
 					}else if ((ultimo=ingresado - 1.2)==0) {
 						resultado.setText("ingreso justo correcto.");
 					}
 				}else if (radioC.isSelected()) {
 					if((ultimo=ingresado - 3.1)<0) {
-						formato.format(ultimo*=(-1.0));
-						resultado.setText("cantidad insuficiente, faltan: "+ultimo.toString()+" euros.");
+						formato.format(ultimo*=(-1));
+						resultado.setText("cantidad insuficiente, faltan: "+String.format("%.2f", ultimo)+" euros.");
 					}else if ((ultimo=ingresado - 3.1)>0){
-						resultado.setText("Cambio: "+ultimo.toString());
+						resultado.setText("Cambio: "+String.format("%.2f", ultimo));
 					}else if ((ultimo=ingresado - 3.1)==0) {
 						resultado.setText("ingreso justo correcto.");
 					}
