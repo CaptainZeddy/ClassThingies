@@ -15,7 +15,7 @@ public class SumaBuilder {
 		File f = new File("bin");
 
 		// Crear proceso para ejecutar SumaMain con argumentos 2 y 4
-		ProcessBuilder pb = new ProcessBuilder("java", "sumaDiferencias.SumaMain", "2", "4");
+		ProcessBuilder pb = new ProcessBuilder("java", "sumaDiferencias.SumaMain", "2", "37");
 
 		pb.directory(f); // Establecer directorio de trabajo
 

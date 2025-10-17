@@ -1,3 +1,4 @@
 # ClassThingies
 
-esto no funciona q alguien lo pare por favor
+Coleccion general y no muy ordenada de las materias trabajadas a lo largo del curso
+
