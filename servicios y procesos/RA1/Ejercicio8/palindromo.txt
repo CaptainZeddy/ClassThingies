@@ -1,8 +1,3 @@
-No es palindormo
-ana es palindromo
-laca no es palindormo
-aerea es palindromo
-cancer no es palindormo
 ana es palindromo
 laca no es palindormo
 aerea es palindromo

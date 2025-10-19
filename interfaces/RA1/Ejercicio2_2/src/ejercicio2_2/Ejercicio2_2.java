@@ -119,7 +119,7 @@ public class Ejercicio2_2 extends JFrame {
 				}else if (radioB.isSelected()) {
 					if((ultimo=ingresado - 1.2)<0) {
 						formato.format(ultimo*=(-1));
-						resultado.setText("cantidad insuficiente, faltan: "+String.format("%.2f", ultimo)+" euros.");
+						resultado.setText("cantidad insuficiente. Faltan: "+String.format("%.2f", ultimo)+" euros.");
 					}else if ((ultimo=ingresado - 1.2)>0){
 						resultado.setText("Cambio: "+String.format("%.2f", ultimo));
 					}else if ((ultimo=ingresado - 1.2)==0) {
