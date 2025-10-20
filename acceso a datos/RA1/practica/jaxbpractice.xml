@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<concesionario>
+    <nombre>pacoautos</nombre>
+    <vehiculos>
+        <vehiculos>
+            <precio>591469.0</precio>
+            <año>52345</año>
+            <marca>repooplt</marca>
+            <modelo>vpooper</modelo>
+            <fabricante>tu mom</fabricante>
+        </vehiculos>
+    </vehiculos>
+    <ubicacion>aqui</ubicacion>
+</concesionario>

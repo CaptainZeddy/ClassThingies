@@ -1,0 +1,13 @@
+tijeras: 7
+colador: 1
+colador: 4
+batidora: 3
+alicates: 5
+batidora: 2
+alicates: 10
+cafetera: 1
+embudo: 2
+tetera: 1
+embudo: 3
+alicates: 2
+destornillador: 6
