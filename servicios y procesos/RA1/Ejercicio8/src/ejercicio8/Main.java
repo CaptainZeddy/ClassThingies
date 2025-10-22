@@ -26,7 +26,7 @@ public class Main {
 			while((palabra= br.readLine())!=null) {
 				palabra=palabra.trim();
 				if (palabra.isEmpty()) continue;
-
+				
 				ProcessBuilder pbPal = new ProcessBuilder("java", "ejercicio8.Palindromo", palabra);
 				pbPal.directory(f);
 				

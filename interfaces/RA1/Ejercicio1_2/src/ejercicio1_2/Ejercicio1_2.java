@@ -1,6 +1,5 @@
 package ejercicio1_2;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -27,7 +26,7 @@ public class Ejercicio1_2 extends JFrame {
 			resultado="baja";
 
 		}else if(actual==presionado) {
-			resultado="Piso actual";
+			resultado="Piso actual.";
 		}
 		return resultado;
 	}

@@ -2,6 +2,8 @@ package ejercicio4_2;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -54,14 +56,14 @@ public class Ejercicio4_2 extends JFrame {
 		contentPane.add(lblTipoDeCuenta);
 		
 		JComboBox comboCantidad = new JComboBox();
-		comboCantidad.setModel(new DefaultComboBoxModel(new String[] {"0", "50", "100", "150", "200", "250", "300", "350", "400", "450", "500"}));
+		comboCantidad.setModel(new DefaultComboBoxModel(new String[] {"0", "50", "100", "150", "200", "250", "300", "350", "400", "450", "500","550","600"}));
 		comboCantidad.setBounds(29, 73, 123, 24);
 		contentPane.add(comboCantidad);
 		
-		JComboBox comboCantidad_1 = new JComboBox();
-		comboCantidad_1.setModel(new DefaultComboBoxModel(new String[] {"Cuenta de ahorro", "Cuenta corriente"}));
-		comboCantidad_1.setBounds(241, 73, 158, 24);
-		contentPane.add(comboCantidad_1);
+		JComboBox tipoCuenta = new JComboBox();
+		tipoCuenta.setModel(new DefaultComboBoxModel(new String[] {"Cuenta de ahorro", "Cuenta corriente"}));
+		tipoCuenta.setBounds(241, 73, 158, 24);
+		contentPane.add(tipoCuenta);
 		
 		JButton btnExtraer = new JButton("Extraer");
 		btnExtraer.setBounds(35, 164, 117, 25);
@@ -72,14 +74,38 @@ public class Ejercicio4_2 extends JFrame {
 		contentPane.add(Cantidad);
 		
 		JLabel Resultado = new JLabel("");
-		Resultado.setBounds(170, 169, 70, 15);
+		Resultado.setBounds(170, 169, 229, 15);
 		contentPane.add(Resultado);
 		
 		JLabel lblNewLabel = new JLabel("Total actual:");
 		lblNewLabel.setBounds(62, 121, 96, 15);
 		contentPane.add(lblNewLabel);
 		
-		btnExtra
+		btnExtraer.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int cantidad= Integer.parseInt(comboCantidad.getSelectedItem().toString()) ;
+				int total= Integer.parseInt(Cantidad.getText());
+				
+				if(tipoCuenta.getSelectedItem().toString().equals("Cuenta de ahorro")&&cantidad<=200) {
+					total-=cantidad;
+					Cantidad.setText(""+total);
+					Resultado.setText("Exito. Se han extraido "+cantidad+" euros.");
+					
+				}else if(tipoCuenta.getSelectedItem().toString().equals("Cuenta de ahorro")&&cantidad>200) {
+					Resultado.setText("Error cantidad de extraccion superada.");
+				}else if(tipoCuenta.getSelectedItem().toString().equals("Cuenta corriente")&&cantidad<=500) {
+					total-=cantidad;
+					Cantidad.setText(""+total);
+					Resultado.setText("Exito. Se han extraido "+cantidad+" euros.");
+					
+				}else if(tipoCuenta.getSelectedItem().toString().equals("Cuenta corriente")&&cantidad>500) {
+					Resultado.setText("Error cantidad de extraccion superada.");
+				}
+				
+			}
+		});
 
 	}
 }

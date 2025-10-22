@@ -85,7 +85,7 @@ public class Ejercicio3_2 extends JFrame {
 		lblCompuerta_1.setBounds(90, 155, 103, 15);
 		contentPane.add(lblCompuerta_1);
 		
-		JButton btnCaudal = new JButton("Actualizar Caudal");
+		JButton btnCaudal = new JButton("Actualizar Caudal.");
 		btnCaudal.setBounds(12, 200, 179, 25);
 		contentPane.add(btnCaudal);
 		
