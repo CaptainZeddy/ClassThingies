@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<almacen>
+    <articulos>
+        <articulo stock="15">
+            <codigo>P001</codigo>
+            <nombre>Monitor Curvo 27</nombre>
+            <precio>299.99</precio>
+        </articulo>
+        <articulo stock="0">
+            <codigo>P002</codigo>
+            <nombre>Teclado Mecánico</nombre>
+            <precio>75.5</precio>
+        </articulo>
+        <articulo stock="30">
+            <codigo>P003</codigo>
+            <nombre>Disco SSD 1TB</nombre>
+            <precio>89.9</precio>
+        </articulo>
+        <articulo stock="5">
+            <codigo>P004</codigo>
+            <nombre>Webcam 4K</nombre>
+            <precio>120.0</precio>
+        </articulo>
+        <articulo stock="12">
+            <codigo>P005</codigo>
+            <nombre>Ratón Inalámbrico</nombre>
+            <precio>25.0</precio>
+        </articulo>
+    </articulos>
+</almacen>
