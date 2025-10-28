@@ -1,6 +1,6 @@
 package contador;
 
-public class Main {
+public class App {
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -10,16 +10,10 @@ public class Main {
 
 		for (int i =0; i<101;i++) {
 			String nombre="t"+i;
-			
-			(new Thread(tg,cont,nombre)).start();
-			
-			
-		}
-		
-//		System.out.println(Thread.activeCount());
-//		tg.interrupt();
-//		System.out.println(Thread.activeCount());
-		
-	}
 
+			(new Thread(tg,cont,nombre)).start();
+
+
+		}
+	}
 }
