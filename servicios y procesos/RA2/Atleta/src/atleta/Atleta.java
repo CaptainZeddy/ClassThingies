@@ -20,6 +20,6 @@ public class Atleta implements Runnable{
 			}
 			
 		}
-		System.out.println("Fin del trayecto. ");
+		System.out.println("Fin del trayecto de "+Thread.currentThread().getName());
 	}
 }
