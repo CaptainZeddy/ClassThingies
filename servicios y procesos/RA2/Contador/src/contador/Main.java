@@ -8,7 +8,7 @@ public class Main {
 
 		Contador cont= new Contador();
 
-		for (int i =0; i<101;i++) {
+		for (int i =1; i<6;i++) {
 			String nombre="t"+i;
 			
 			(new Thread(tg,cont,nombre)).start();
