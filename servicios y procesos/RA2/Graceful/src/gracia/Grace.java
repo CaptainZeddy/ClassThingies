@@ -11,7 +11,7 @@ public class Grace implements Runnable{
 				if(Thread.currentThread().isAlive())
 					System.out.println("En ejecucion...");
 
-				Thread.sleep(20);
+				Thread.sleep(200);
 
 
 				i++;
