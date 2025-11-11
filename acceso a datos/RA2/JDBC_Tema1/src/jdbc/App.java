@@ -112,7 +112,7 @@ public class App {
 			ps.close();
 
 			st=connection.createStatement();
-			rs=st.executeQuery("UPDATE prestamos SET isbn='" + isbn + "' WHERE id_lector=" + idLector);
+			int filas=st.executeUpdate("UPDATE prestamos SET isbn='" + isbn + "' WHERE id_lector=" + idLector);
 
 			connection.commit();
 
