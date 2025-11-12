@@ -6,6 +6,12 @@ public class App {
 		Tienda t = new Tienda();
 		
 		Thread t1= new Thread(t);
+		
+		for (int i =0;i<=10;i++) {
+			new Thread(t,"Numero "+i).start();;
+			
+		}
+		
 	}
 
 }
