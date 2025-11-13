@@ -120,7 +120,6 @@ public class App {
 			try {
 				connection.rollback();
 			} catch (SQLException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 		}
