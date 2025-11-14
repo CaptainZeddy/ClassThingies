@@ -1,0 +1,198 @@
+1) Concepto de Enterprise Resource Planning (ERP)
+a) Definiciones clásicas de los autores citados
+
+Has citado autores como Thomas Davenport (1998), Christopher Holland & Bernard Light (1999), José Esteves & Pablo Pastor (1999), Kun Kumar & Jos van Hillegersberg (2000), Richard Shanks & Peter Seddon (2000), Kenneth Laudon & Jane Laudon (2000) o Ronald McGaughey & Angappa Gunasekaran (2009).
+Aquí tienes lo que he podido encontrar y cómo compararlas:
+
+Davenport (1998): En su obra sobre “ERP Anatomy” habla del sistema ERP como uno de los proyectos más importantes que una empresa podría acometer para optimizar el negocio. 
+ResearchGate
++1
+
+Holland & Light (1999): Definen el ERP como un “sistema integrado a nivel de empresa (enterprise-wide information system) que automatiza los procesos centrales de negocio (manufactura, RRHH, finanzas, cadena de suministro)”. 
+ieomsociety.org
++1
+
+Más generales: Por ejemplo, según IBM: “ERP es un sistema de software de gestión empresarial diseñado para administrar y simplificar funciones, procesos y flujos de trabajo de una organización mediante integración y automatización”. 
+IBM
+
+Definiciones actuales también: Según una guía reciente de ERP: “ERP es un software que integra y gestiona los procesos centrales del negocio para agilizar operaciones y mejorar la comunicación entre departamentos”. 
+orderwise.co.uk
++1
+
+Comparación:
+
+Las definiciones clásicas se centran en la integración de los procesos centrales (finanzas, manufactura, recursos humanos) y en la automatización y estandarización de esos procesos.
+
+También subrayan la amplitud (enterprise-wide) y que implican cambios de proceso importantísimos (no sólo software).
+
+Las definiciones más modernas añaden el tema de “una única fuente de verdad”, datos en tiempo real, visibilidad de toda la empresa, además de usar bases de datos únicas, y se apoyan más en términos como “un único sistema integrado”, “flujos de datos”, “tomar decisiones” etc.
+
+También se nota un cambio: en los 90s/2000s el foco era “sustituir sistemas aislados”, “automatizar procesos”, mientras que en la actualidad el foco se añade: “visión unificada”, “data-driven”, “cloud”, “agilidad”.
+
+b) Definiciones más actuales y comparación
+
+Aquí tienes definiciones más recientes:
+
+Según la guía de Infor: “ERP … es un tipo de software que automatiza y soporta los procesos centrales de negocio (finanzas, manufactura, compras, cadena de suministro, ventas, RRHH). Proporciona una vista centralizada de las actividades de negocio y actúa como fuente única de verdad para tu organización.” 
+infor.com
+
+Según la guía de SAP SE: “ERP actúa como sistema nervioso central de la empresa, gestiona los procesos clave — finanzas, manufactura, cadena de suministro, ventas — con un único sistema integrado y base de datos común.” 
+SAP
+
+Comparación:
+
+Las definiciones actuales destacan la base de datos común, la visión en tiempo real, la integración entre procesos, la escalabilidad y el hecho de que ya no es solo “instalar un paquete” sino que es parte de la transformación digital (cloud, IA, datos).
+
+En resumen, lo que cambia entre definiciones clásicas y actuales:
+
+Mayor énfasis en datos en tiempo real, en visibilidad global de la empresa.
+
+Añaden aspectos tecnológicos nuevos (cloud, módulo, analítica) que no estaban tanto en definiciones de 1990s.
+
+Las definiciones clásicas tenían un matiz más estructural: estandarizar procesos, reemplazar sistemas, automatizar. Las modernas agregan que el ERP debe soportar agilidad, adaptación, integración con otras tecnologías.
+
+Puedes concluir que la esencia sigue siendo la integración de los procesos clave de la empresa en un solo sistema, pero el contexto tecnológico y las expectativas han evolucionado.
+
+2) Funcionalidades de los módulos relacionados con la fabricación de productos
+
+Aquí tienes un resumen de lo que hacen los módulos clave Fabricación / MRP / PLM / Calidad / Trazabilidad en el ámbito de un ERP, con lo que te puede servir para tu informe.
+
+Módulo de Fabricación (Manufacturing)
+
+Se encarga de planificar, ejecutar y controlar el proceso de producción: órdenes de fabricación, gestión del taller, control de máquinas, flujos de trabajo, materias primas, componentes, recursos humanos, recursos máquina.
+
+Permite gestionar la ruta de producción, definir operaciones, asignar recursos, llevar el seguimiento de la fabricación real vs planificado.
+
+Se integra con inventario (materias primas y productos terminados), con compras, ventas y mantenimiento.
+
+Ejemplo: “Essential modules and features of a manufacturing ERP” señala que incluye: planificación de producción/discrete & process manufacturing, gestión de la cadena de suministro, control de calidad, inventario, trazabilidad. 
+priority-software.com
+
+Módulo de MRP (Material Requirements Planning)
+
+En inglés “Planificación de Requisitos de Materiales”. Su objetivo: asegurar que los materiales necesarios estén disponibles para la producción en el momento justo, planificar los niveles de inventario, programar producción y entregas, minimizar inventarios. 
+Wikipedia
++1
+
+Funciones típicas: cálculo de demanda dependiente, lista de materiales (BOM), gestión de órdenes de producción, programación de compras, predicción de materiales, gestión de stock y excepciones.
+
+Es una parte esencial dentro de la fabricación, que enlaza diseño/producto, materiales, producción y logística.
+
+Módulo de PLM (Product Lifecycle Management)
+
+PLM gestiona el ciclo de vida del producto desde su concepción (diseño), ingeniería, fabricación, servicio, hasta su retirada/disposición. 
+Wikipedia
++1
+
+En contexto de ERP/fabricación: el PLM mantiene datos de ingeniería, versiones de producto, cambios de diseño, especificaciones, estructura del producto (BOM), revisiones, configuraciones, variantes.
+
+Una buena integración PLM-ERP permite que los cambios de diseño se reflejen correctamente en la producción, compras, calidad, mantenimiento. Ejemplo del artículo: “What Data Model You Need To Solve PLM & ERP?” habla de que la estructura de producto en PLM (enfoque ingenieril) vs en ERP (enfoque manufactura/suministro) debe estar alineada. 
+Más Allá de PLM Blog
+
+Módulo de Calidad (Quality Management)
+
+Control de calidad: gestión de inspecciones, pruebas, no conformidades, acciones correctivas, muestreo, cumplimiento normativo.
+
+Aplica tanto dentro del taller (producción) como en logística (recepción, almacén) y en producto final.
+
+Se integra con producción, trazabilidad, mantenimiento, servicio. En los sistemas de fabricación modernos, calidad está totalmente entrelazada con la producción y la trazabilidad para asegurar estándares, cumplimiento, y capacidad de recuperación ante fallos.
+
+Módulo de Trazabilidad (Traceability)
+
+Permite rastrear el origen, el proceso, la ubicación de materias primas, componentes, productos terminados, lotes y series a lo largo de la cadena de valor (desde proveedor hasta cliente) y a lo largo del ciclo de vida del producto.
+
+Esto es clave en muchas industrias (alimentaria, farmacéutica, automotriz) para retirada de producto, auditoría, cumplimiento normativo. “Lot tracking & full traceability” aparece como funcionalidad esencial en artículos recientes. 
+priority-software.com
++1
+
+En fabricación, la trazabilidad se enlaza con calidad, producción, mantenimiento, servicio al cliente.
+
+Diferencias entre los módulos / cómo se relacionan
+
+MRP es más específico al flujo de materiales, inventario y producción planificada.
+
+Fabricación es más amplio e incluye ejecución de producción, control del taller, maquinaria, recursos humanos y flujo completo.
+
+PLM está más orientado al diseño, ingeniería y ciclo de vida del producto, mientras que fabricación/MRP se centran en la fase de producción.
+
+Calidad y trazabilidad son módulos transversales: aseguran que lo que se fabrica cumple estándar y que cada componente/producto puede ser rastreado en su contexto.
+
+En un ERP bien diseñado, estos módulos están integrados: los cambios de diseño (PLM) afectan la fabricación, la planificación (MRP) afecta a inventario y compras, la calidad afecta al taller, la trazabilidad al registro de lotes y productos terminados y distribución.
+
+Para tu informe puedes desarrollar cada módulo, explicar sus funcionalidades, describir cómo se interrelacionan, dar ejemplos prácticos, y quizá mencionar tendencias actuales como fabricación inteligente, IoT, Industry 4.0 que influyen en esos módulos.
+
+3) Informe: diferencias de los conceptos de Cloud Computing – IaaS, PaaS, SaaS
+
+Aquí tienes un esquema con definiciones y diferencias que puedes incluir en tu informe.
+
+Definiciones
+
+Infraestructura como servicio (IaaS – Infrastructure as a Service): Modelo de servicios de computación en la nube en que el proveedor ofrece recursos de computación fundamentales como máquinas virtuales, almacenamiento, redes, servidores, etc. El cliente gestiona los sistemas operativos, aplicaciones, datos. Es la capa más cercana al hardware/infraestructura.
+
+Plataforma como servicio (PaaS – Platform as a Service): Modelo en que el proveedor ofrece una plataforma (sistema operativo, entorno de desarrollo, base de datos, servicios intermedios) sobre la cual el cliente despliega sus aplicaciones. El cliente gestiona sus aplicaciones y datos, mientras que el proveedor gestiona la plataforma subyacente.
+
+Software como servicio (SaaS – Software as a Service): Modelo en que el proveedor ofrece una aplicación completa alojada en la nube, accesible generalmente vía navegador, que el cliente utiliza sin preocuparse de la infraestructura ni plataforma subyacente. El cliente usa el software, configura en la medida permitida, pero no se encarga del mantenimiento del sistema operativo, infraestructura, etc.
+
+Diferencias / comparación
+
+En IaaS, el cliente tiene más control (infraestructura, sistema operativo, middleware) pero también mayor responsabilidad. Es flexible, escalable, buen para migrar sistemas legacy, para infra compleja.
+
+En PaaS, el cliente se abstrae de la infraestructura, se centra en el desarrollo/despliegue de aplicaciones. Es más fácil que IaaS para desarrollo rápido, pero menos control granular.
+
+En SaaS, la responsabilidad del proveedor es mayor: infraestructura + plataforma + software. El cliente solo usa la aplicación. Es el más “usado” para software estándar (correo, CRM, ERP cloud, etc.).
+
+Costes, mantenimiento, actualización: en SaaS el proveedor hace las actualizaciones; en IaaS cliente gestiona mucho; en PaaS intermedio.
+
+Tiempo de puesta en marcha: SaaS es muy rápido; PaaS también; IaaS depende de configuración.
+
+Customización: IaaS mayor personalización; PaaS buena para construir; SaaS dependerá de lo que ofrece el proveedor.
+
+Adecuación: IaaS para compañías que requieren control/datos sensibles; PaaS para desarrollo de aplicaciones; SaaS para uso de aplicaciones estándar.
+
+Ejemplo aplicado al ERP
+
+Una empresa podría usar un ERP en modo SaaS: la aplicación ERP está alojada en la nube, el proveedor se encarga de todo.
+
+O podría usar IaaS: trasladar su ERP on-premise a máquinas virtuales en la nube, gestionando aún los sistemas operativos y bases de datos.
+
+O PaaS: desarrollar módulos personalizados del ERP en la plataforma del proveedor.
+Explicar estas diferencias en tu informe facilitará comprender por qué muchas soluciones ERP modernas se ofrecen en la nube como SaaS.
+
+4) Licencias de uso de software: copyright, copyleft, Creative Commons + licencias de ERP
+Conceptos
+
+Copyright: Es el régimen tradicional de derechos de autor, en que el autor o titular tiene derechos exclusivos de reproducción, distribución, modificación, etc., y los usuarios necesitan licencias específicas.
+
+Copyleft: Es una modalidad de licencia de software libre, donde el autor permite el uso, modificación y distribución del software, siempre que las versiones modificadas se mantengan bajo la misma licencia (o similar) — p.ej., GNU GPL.
+
+Creative Commons (CC): Son licencias que permiten a los autores conceder ciertos derechos al público (uso, compartir, modificar) bajo condiciones específicas (atribución, no comercial, compartir igual, etc.). Habitualmente se usan más para contenidos creativos que para software, aunque hay variantes para software.
+
+Tipos de licencias bajo las que se distribuyen los ERP más conocidos
+
+Muchos ERP comerciales usan licencias propietarias (copyright): por ejemplo, SAP ERP es software comercial y bajo licencia propietaria. 
+Wikipedia
+
+Existen ERP de código abierto bajo licencias copyleft o similares: por ejemplo, ERP5 es un ERP open-source basado en Python/Zope y bajo licencia GPL. 
+Wikipedia
+
+Puedes investigar cada ERP que quieras (por ejemplo Odoo, Dolibarr) para ver qué licencia usan.
+En tu informe puedes mencionar: “Los ERP comerciales habitualmente usan licencias propietarias (copyright), mientras que los ERP open‐source usan licencias tipo copyleft (GPL, LGPL) u otras licencias abiertas.”
+
+5) c-Commerce, e-Commerce y e-Business
+a) Definiciones
+
+c-Commerce: Normalmente “commerce móvil” (m-commerce: mobile commerce) o “conversational commerce”? Dependerá del contexto, pero en muchos textos se usa c-commerce como “commerce en la nube” o “commerce colaborativa”. Tendrías que ver el contexto de tu curso. Una posible definición: comercio electrónico realizado a través de dispositivos móviles o plataformas conversacionales (chatbots).
+
+e-Commerce (comercio electrónico): Actividades de compra y venta de productos o servicios a través de internet, implica transacciones electrónicas, pagos online, envío de bienes o servicios digitales.
+
+e-Business (negocio electrónico): Concepto más amplio: no solo la venta (transacción) sino todos los procesos de negocio que se realizan electrónicamente: marketing, ventas, servicios al cliente, compras, suministro, logística, colaboración, procesos internos, etc.
+
+b) Diferencias entre e-Commerce y e-Business
+
+e-Commerce = acto de comercio (comprar/vender) vía medios electrónicos.
+
+e-Business = engloba e-Commerce pero también todos los procesos internos y externos del negocio que usan tecnologías de la información: gestión de relaciones con clientes, cadena de suministro, colaboraciones, servicio post-venta, etc.
+
+Ejemplo: Una empresa que solo tiene una tienda online está haciendo e-Commerce. Si además integra su gestión de inventario, logística, CRM, marketing digital, compras de proveedores, etc., está haciendo e-Business.
+
+Puedes decir que e-Business es estratégico, integral, e-Commerce es más táctico/operativo.
