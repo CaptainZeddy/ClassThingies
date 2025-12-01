@@ -6,7 +6,7 @@ public interface ProductoDAO {
 
 	public void modelo();
 	
-	void guardar(Producto p);
+	public void guardar(Producto p);
 
 	public Producto buscarPorId(Long id) ;
 

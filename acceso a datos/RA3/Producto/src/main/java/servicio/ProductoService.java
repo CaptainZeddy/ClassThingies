@@ -14,6 +14,10 @@ public class ProductoService {
  public ProductoService(ProductoDAO productoDAO) {
      this.productoDAO = productoDAO;
  }
+ 
+ public void iniciar() {
+	 productoDAO.modelo();
+ }
 
  public void registrarProducto(Producto p) {
      // Lógica de negocio: Validar que el precio no sea negativo

@@ -16,7 +16,7 @@ public class MenuProducto {
 	public static void main(String[] args) {
 		// Inicializar el Service y el DAO
 		productoService = new ProductoService(new ProductoDAOImpl());
-
+		productoService.iniciar();
 		mostrarMenu();
 
 		// Cerrar la SessionFactory al finalizar la aplicación
@@ -80,7 +80,8 @@ public class MenuProducto {
 			productoService.registrarProducto(p);
 			System.out.println("Producto creado con ID: " + p.getId());
 		} catch (Exception e) {
-			System.out.println("Error al crear: " + e.getMessage());
+			e.printStackTrace();
+//			System.out.println("Error al crear: " + e.getMessage());
 		}
 	}
 

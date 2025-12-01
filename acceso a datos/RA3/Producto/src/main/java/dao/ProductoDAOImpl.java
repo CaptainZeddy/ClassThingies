@@ -24,9 +24,8 @@ public class ProductoDAOImpl implements ProductoDAO{
 		Transaction tx=null;
 
 		try {
-			tx=ses.getTransaction();
-
-
+			tx=ses.beginTransaction();
+			ses.persist(p);
 			tx.commit();
 		}catch(RuntimeException e){
 
@@ -46,7 +45,7 @@ public class ProductoDAOImpl implements ProductoDAO{
 		Transaction tx=null;
 
 		try {
-			tx=ses.getTransaction();
+			tx=ses.beginTransaction();
 			p=ses.find(Producto.class, id);
 			tx.commit();
 		}catch(RuntimeException e){
@@ -68,9 +67,8 @@ public class ProductoDAOImpl implements ProductoDAO{
 		Transaction tx=null;
 
 		try {
-			tx=ses.getTransaction();
-			
-
+			tx=ses.beginTransaction();
+			ses.merge(p);
 			tx.commit();
 		}catch(RuntimeException e){
 
@@ -90,7 +88,7 @@ public class ProductoDAOImpl implements ProductoDAO{
 		Transaction tx=null;
 
 		try {
-			tx=ses.getTransaction();
+			tx=ses.beginTransaction();
 			p=ses.find(Producto.class, id);
 			
 			ses.remove(p);
