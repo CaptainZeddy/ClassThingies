@@ -22,7 +22,7 @@ public class GestorJugadores extends JFrame {
         JLabel lblId = new JLabel("ID:");
         lblId.setBounds(30, 30, 70, 20);
         getContentPane().add(lblId);
-*
+
         txtId = new JTextField();
         txtId.setBounds(100, 30, 120, 20);
         getContentPane().add(txtId);

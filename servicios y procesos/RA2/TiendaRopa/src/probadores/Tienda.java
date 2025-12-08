@@ -19,7 +19,7 @@ public class Tienda implements Runnable {
 		}finally{
 			System.out.println("Sale: "+Thread.currentThread().getName());
 			probador.release();
-		};
+		}
 
 
 	}

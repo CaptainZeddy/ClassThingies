@@ -34,6 +34,8 @@ public class App {
 			e.printStackTrace();
 		}
 	}
+	
+
 
 	public static void update(int id, String email) throws SQLException {
 
@@ -108,7 +110,8 @@ public class App {
 			ps.setString(2, isbn);
 
 			rs=ps.executeQuery();
-
+			ps.addBatch();
+			
 			ps.close();
 
 			st=connection.createStatement();
