@@ -14,4 +14,8 @@ public interface libroDAO {
 	
 	public void deletearLibro(long id);
 	
+	public void ejercicio1();
+	
+	public void ejercicio2(String n);
+	
 }

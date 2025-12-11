@@ -26,7 +26,9 @@ public class libroApp {
 		dl.setLibro(libro);
 		
 		ldao.modelo();
-		ldao.insertarLibro(dl);
+//		ldao.ejercicio1();
+		
+		ldao.ejercicio2("J.R.R. Tolkien");
 	}
 
 }
