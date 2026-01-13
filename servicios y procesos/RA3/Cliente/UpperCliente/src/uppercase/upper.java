@@ -12,7 +12,7 @@ import java.net.UnknownHostException;
 public class upper {
 
 	private String serverIP;
-	private int serverPort;
+	private final static int serverPort= 49171;
 	private Socket socket;
 	private InputStream is;
 	private OutputStream os;
@@ -21,7 +21,6 @@ public class upper {
 
 	public upper(String serverIP, int serverPort) {
 		this.serverIP = serverIP;
-		this.serverPort = serverPort;
 	}
 
 	public void start() throws UnknownHostException, IOException {
@@ -44,17 +43,18 @@ public class upper {
 		System.out.println("(Cliente) Conexiones cerradas...");
 	}
 
-	public static void main(String[] args) {
-		upper cliente = new upper("192.168.1.184", 49171);//Pongo la IP de mi ordenador en el que lo ejecuto
+	public static void main(String[] args) throws IOException {
+		upper cliente = new upper("192.168.1.184", serverPort);//Pongo la IP de mi ordenador en el que lo ejecuto
 		try {
 			cliente.start();
 			cliente.dos.writeUTF("TEXTO EN MAYUSCULAS");//Mando 100 al servidor (output)
 			System.out.println("Mensaje del servidor: " + cliente.dis.readUTF());//Leo entrada de datos del servidor (intput) y lo muestro
-			cliente.stop();
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
+		}finally {
+			cliente.stop();
 		}
 	}
 

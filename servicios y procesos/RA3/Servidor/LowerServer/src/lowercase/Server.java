@@ -49,16 +49,20 @@ public class Server {
 		return lower;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		Server servidor= new Server(49171);
 		try {
-			Server servidor= new Server(49171);
+			servidor= new Server(49171);
 			servidor.start();
-			System.out.println("Texto enviado: "+servidor.dis.readUTF());
-			String resultado=servidor.dis.readUTF();//Leo el mensaje de entrada (input) del cliente y lo muestro
+			String texto = servidor.dis.readUTF();
+			System.out.println("Texto enviado: "+ texto);
+			String resultado=toLowerCase(texto);//Leo el mensaje de entrada (input) del cliente y lo muestro
 			servidor.dos.writeUTF(toLowerCase(resultado));//escribo mensaje 200 (output)
-			servidor.stop();
+			
 		}catch (IOException ioe) {
 			ioe.printStackTrace();
+		}finally {
+			servidor.stop();
 		}
 	}
 
